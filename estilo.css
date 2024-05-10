@@ -1,0 +1,168 @@
+body {
+    background-color: rgb(175, 152, 46);
+    margin-top: 100px;
+}
+
+.apresentacao {
+    background-color: rgb(49, 92, 0);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.spacer {
+    height: 100px; /* Define a altura do deslocamento para o conteúdo principal */
+}
+
+.aumentar-texto {
+    font-size: 20px;
+}
+
+nav {
+    text-align: center;
+    position: relative; /* Adiciona um contexto de posicionamento relativo */
+    z-index: 1001; /* Garante que o menu de navegação fique acima do título */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #e48110;
+    color: white;
+    border: 1px solid #e48110;
+    border-radius: 5px;
+}
+
+nav li a:hover {
+    background-color: black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+/* Estilos para as seções, exceto para a seção de contato */
+section:not(#contato) {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+/* Estilos para a seção de contato */
+#contato {
+    padding: 20px;
+    border: 1px solid white;
+}
+
+/* Estilos para a seção */
+section {
+    position: relative;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+/* Estilos para o conteúdo da seção */
+.section-content {
+    display: flex;
+}
+
+/* Estilos para o contêiner da imagem */
+.image-wrapper {
+    width: 33%;
+    margin-right: 20px;
+}
+
+/* Estilos para a imagem */
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para o conteúdo de texto */
+.text-content {
+    flex: 1;
+}
+
+/* Estilos para os cabeçalhos das seções */
+section h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Estilo para o contêiner da seção de contato e imagem */
+.contato-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para a imagem */
+.contato-imagem {
+    max-width: 33%; /* Defina a largura da imagem conforme necessário */
+    margin-right: 20px; /* Espaçamento entre a imagem e o formulário */
+}
+
+.contato-imagem img {
+    max-width: 100%; /* Garante que a imagem se ajuste ao contêiner */
+}
+
+/* Estilo para o formulário de contato */
+.contato-form {
+    flex: 1; /* Ocupa todo o espaço disponível restante */
+}
+
+/* Media query para telas menores */
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para telas menores */
+    .apresentacao h1 {
+        font-size: 24px;
+    }
+    nav ul {
+        display: block;
+    }
+    nav li {
+        display: block;
+    }
+    nav li a {
+        display: block;
+        padding: 10px;
+    }
+}

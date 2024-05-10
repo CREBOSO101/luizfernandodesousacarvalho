@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiz Fernando de Sousa Carvalho</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Texto de apresentação -->
+<div class="apresentacao">
+    <h1>Contate-nos</h1>
+    <p>Para tirar dúvidas e dar sugestões nos envie uma mensagem!</p>
+</div>
+
+    <!-- Deslocamento para o conteúdo principal -->
+<div class="spacer"></div>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="sobre.html">Sobre mim</a></li>
+            <li><a href="formacao.html">Formação</a></li>
+            <li><a href="portfolio.html">Portfólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Seção de Contato e Imagem -->
+    <section id="contato" class="aumentar-texto contato-container">
+        <div class="contato-imagem">
+            <img src="imagens/sailormoon.jpeg" alt="Descrição da imagem">
+        </div>
+        <div class="contato-form">
+            <h2>Contate-nos</h2>
+            <form action="enviar.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+            
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+</body>
+</html>
