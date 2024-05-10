@@ -1,28 +1,36 @@
+/* Define o fundo para o corpo da página */
 body {
     background-color: rgb(175, 152, 46);
-    margin-top: 100px;
+    margin-top: 0;
 }
 
+/* Estilos para a barra de apresentação */
 .apresentacao {
     background-color: rgb(49, 92, 0);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
     margin: 0;
-    position: fixed;
     width: 100%;
     top: 0;
-    z-index: 1000;
+    z-index: 1000; /* Garante que a barra esteja acima de outros elementos */
 }
 
+.apresentacao-content {
+    margin-top: 0; /* Define a margem superior como zero para posicionar o conteúdo no topo */
+}
+
+/* Define um espaço vertical */
 .spacer {
     height: 100px; /* Define a altura do deslocamento para o conteúdo principal */
 }
 
+/* Estilos para aumentar o tamanho do texto */
 .aumentar-texto {
     font-size: 20px;
 }
 
+/* Estilos para a navegação */
 nav {
     text-align: center;
     position: relative; /* Adiciona um contexto de posicionamento relativo */
@@ -90,7 +98,7 @@ section:not(#contato) {
     border: 1px solid white;
 }
 
-/* Estilos para a seção */
+/* Estilos gerais para todas as seções */
 section {
     position: relative;
     padding: 20px;
@@ -111,7 +119,7 @@ section {
     margin-right: 20px;
 }
 
-/* Estilos para a imagem */
+/* Estilos para a imagem dentro do contêiner */
 .image-wrapper img {
     width: 100%;
     height: auto;
@@ -140,6 +148,7 @@ section h2 {
     margin-right: 20px; /* Espaçamento entre a imagem e o formulário */
 }
 
+/* Estilo para a imagem dentro do contêiner */
 .contato-imagem img {
     max-width: 100%; /* Garante que a imagem se ajuste ao contêiner */
 }
